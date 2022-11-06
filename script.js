@@ -39,7 +39,7 @@ const menu = {
   },
   fries: {
     price: "$4",
-    imageName: "fries.png",
+    imageName: "Fries.png",
   },
   chicken_noodle_soup: {
     price: "$5",
