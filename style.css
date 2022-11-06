@@ -68,11 +68,12 @@ img {
 }
 
 .pos_display {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-  flex-grow: 1;
-  background-color: rgb(238, 238, 238);
+    display: flex;
+    min-width: 377px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    flex: 1 auto;
+    background-color: rgb(238, 238, 238);
 }
 
 .pos_display > p {
