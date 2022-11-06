@@ -1,0 +1,123 @@
+h1,
+html {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  padding: 1em;
+  color: #dd0031;
+  font-size: 25px;
+}
+
+h1,
+p,
+button {
+  text-align: center;
+  font-family: cursive;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  background-image: url(images/cfalogo.svg);
+  background-size: cover;
+  background-repeat: none;
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+img {
+  height: 7em;
+  width: 7em;
+}
+
+.board {
+  display: flex;
+  flex-grow: 1;
+  margin: 0;
+  background-color: rgb(250, 247, 236);
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.border {
+  border: 1px solid fuchsia;
+}
+
+.menu {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.food,
+.drinks,
+.desserts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pos_display {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  flex-grow: 1;
+  background-color: rgb(238, 238, 238);
+}
+
+.pos_display > p {
+  padding: 0;
+  margin: 1px;
+}
+
+.food_option > img,
+.drink_option > img,
+.dessert_option > img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5em;
+}
+
+footer {
+  height: 4em;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div.right {
+  display: flex;
+}
+
+footer > div.left {
+  display: flex;
+}
+
+.ai_order {
+  display: flex;
+  flex-direction: row;
+}
+
+.ai_order > img {
+  height: 100%;
+  width: 100%;
+}
+
+footer > div > button {
+  padding: 1.5em;
+  margin-right: 3em;
+}
+
+.danger {
+  border: 3px solid maroon;
+  font-weight: bold;
+}

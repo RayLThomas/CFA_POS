@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chic-Fil-A!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Chick-Fil-A POS</h1>
+    <span></span>
+    <div class="board">
+      <div class="menu">
+        <div class="food">
+          <div class="food_option" onclick="addItem(this.id)" id="sandwich">
+            <img src="images\Sandwich.png" alt="image of menu item" />
+            <p>Chicken Sandwich</p>
+          </div>
+          <div class="food_option" onclick="addItem(this.id)" id="nuggets">
+            <img src="images\nuggets.png" alt="image of menu item" />
+            <p>Chicken Nuggets</p>
+          </div>
+          <div class="food_option" onclick="addItem(this.id)" id="strips">
+            <img src="images\strips.png" alt="image of menu item" />
+            <p>Chicken Strips</p>
+          </div>
+          <div
+            class="food_option"
+            onclick="addItem(this.id)"
+            id="chicken_noodle_soup"
+          >
+            <img
+              src="images\Chicken-Noodle-Soup.png"
+              alt="image of menu item"
+            />
+            <p>Chicken Soup</p>
+          </div>
+          <div class="food_option" onclick="addItem(this.id)" id="fries">
+            <img src="images\Fries.png" alt="image of menu item" />
+            <p>Waffle Fries</p>
+          </div>
+        </div>
+        <div class="drinks">
+          <div class="drink_option" onclick="addItem(this.id)" id="water">
+            <img src="images\water.png" alt="image of menu item" />
+            <p>Water</p>
+          </div>
+          <div class="drink_option" onclick="addItem(this.id)" id="coke">
+            <img src="images\coke.png" alt="image of menu item" />
+            <p>Coke</p>
+          </div>
+          <div class="drink_option" onclick="addItem(this.id)" id="lemonade">
+            <img src="images\lemonade.png" alt="image of menu item" />
+            <p>Lemonade</p>
+          </div>
+          <div class="drink_option" onclick="addItem(this.id)" id="milk">
+            <img src="images\milk.png" alt="image of menu item" />
+            <p>Milk</p>
+          </div>
+          <div class="drink_option" onclick="addItem(this.id)" id="apple_juice">
+            <img src="images\apple-juice.png" alt="image of menu item" />
+            <p>Apple Juice</p>
+          </div>
+        </div>
+        <div class="desserts">
+          <div class="dessert_option" onclick="addItem(this.id)" id="ice_dream">
+            <img src="images\icedream.png" alt="image of menu item" />
+            <p>Ice Cream</p>
+          </div>
+          <div
+            class="dessert_option"
+            onclick="addItem(this.id)"
+            id="milk_shake"
+          >
+            <img src="images\milkshake.png" alt="image of menu item" />
+            <p>Milk Shake</p>
+          </div>
+          <div class="dessert_option" onclick="addItem(this.id)" id="brownie">
+            <img src="images\brownie.png" alt="image of menu item" />
+            <p>Brownie</p>
+          </div>
+        </div>
+      </div>
+      <div class="pos_display"></div>
+    </div>
+    <footer>
+      <div class="left">
+        <div class="ai_order">
+          <!-- example ai order image:
+          <img src="images\brownie.png" alt="image of menu item" />
+			-->
+        </div>
+      </div>
+      <div class="right">
+        <button onclick="place_order()" id="dine_in_btn">Dine In</button>
+        <button onclick="place_order()" id="carry_out_btn">Carry Out</button>
+        <button onclick="clear_orders()" id="cancel_order_btn" class="danger">
+          Cancel Order
+        </button>
+      </div>
+    </footer>
+
+    <audio data-key="65" src="sounds/clap.mp3"></audio>
+    <audio data-key="83" src="sounds/hihat.mp3"></audio>
+    <audio data-key="68" src="sounds/kick.mp3"></audio>
+    <audio data-key="70" src="sounds/openhat.mp3"></audio>
+    <audio data-key="71" src="sounds/boom.mp3"></audio>
+    <audio data-key="72" src="sounds/ride.mp3"></audio>
+    <audio data-key="74" src="sounds/snare.mp3"></audio>
+    <audio data-key="75" src="sounds/tom.mp3"></audio>
+    <audio data-key="76" src="sounds/tink.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
