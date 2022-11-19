@@ -81,6 +81,23 @@ img {
   margin: 1px;
 }
 
+.pressedAnimation {
+  animation-name: pressed;
+  animation-duration: .2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pressed {
+  from {
+    box-shadow: #cd98ff 0px 0px 5px 5px;;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+
 .food_option > img,
 .drink_option > img,
 .dessert_option > img {
@@ -108,13 +125,35 @@ footer > div.left {
   flex-direction: row;
 }
 
+.ai_order::after {
+  font-family: 'Material Icons';
+  content: "chevron_left chevron_left";
+  min-width: 3em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  animation: .7s infinite alternate pulse;
+}
+
+@keyframes pulse {
+  from {
+    margin-left: 2%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
 .ai_order > img {
   height: 100%;
   width: 100%;
 }
 
 footer > div > button {
-  padding: 1.5em;
+  padding: 0 1.2em;
   margin-right: 3em;
 }
 

@@ -70,6 +70,13 @@ const render_pos_display = (item) => {
   pos.appendChild(order);
 };
 
+const animatePressed = (element) => {
+  element.classList.add("pressedAnimation");
+  setTimeout(() => {
+    element.classList.remove("pressedAnimation");
+  }, "100");  
+}
+
 const addItem = (item) => {
   render_pos_display(item);
 };
