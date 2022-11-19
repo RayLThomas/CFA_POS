@@ -72,7 +72,7 @@ img {
     min-width: 377px;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    flex: 1 auto;
+    flex: 2;
     background-color: rgb(238, 238, 238);
 }
 
