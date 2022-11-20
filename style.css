@@ -1,3 +1,11 @@
+html {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;  
+}
+
 h1,
 html {
   margin: 0;
@@ -8,6 +16,40 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+}
+
+.perfectAnimation {
+  animation-name: perfect;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes perfect {
+  from {
+    background: #059600;
+  }
+  to {
+    background: initial;
+  }
+}
+
+.tryAgainAnimation {
+  animation-name: tryAgain;
+  animation-duration: .15s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tryAgain {
+  from {
+    background: #be0404;
+  }
+  to {
+    background: initial;
+  }
 }
 
 h1 {
@@ -127,13 +169,13 @@ footer > div.left {
 
 .ai_order::after {
   font-family: 'Material Icons';
-  content: "chevron_left chevron_left";
+  content: "chevron_leftchevron_left";
   min-width: 3em;
   position: relative;
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 3em;
   animation: .7s infinite alternate pulse;
 }
 
