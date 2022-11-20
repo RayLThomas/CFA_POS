@@ -106,6 +106,12 @@ const perfect = () => {
   }, "500");  
 }
 
+const refresh_orders = () => {
+  while (pos.firstChild) {
+    pos.removeChild(pos.firstChild);
+  }
+}
+
 const render_pos_display = (item) => {
   if (
     document.querySelectorAll("body > div > div.pos_display > p").length > 10
@@ -136,7 +142,7 @@ const ai_order_to_array = (order_obj) => {
 }
 
 const place_order = () => {
-  clear_orders();
+  refresh_orders();
   let ai_order = ai_order_to_array(_ai_order);
   let inputed_Order = [];
   console.log("ai_order is: ", ai_order);
@@ -150,6 +156,8 @@ const clear_orders = () => {
   while (pos.firstChild) {
     pos.removeChild(pos.firstChild);
   }
+ 
+  _inputed_Order = [];
 };
 
 const create_ai_order = (num) => {
